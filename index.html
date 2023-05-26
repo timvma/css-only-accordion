@@ -18,8 +18,6 @@
 
 <section >
 
-
-
     <div class="accordion">
         <label class="accordion__head" for="css_only_accordion__basic">CSS ONLY</label>
         <input id="css_only_accordion__basic" type="checkbox" class="accordion__status">
@@ -29,17 +27,63 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus delectus qui voluptatibus quod voluptatem? Optio, dolor. Quasi sit incidunt atque similique ea architecto quis quisquam animi, aliquam qui eligendi corporis!</p>
                 
                 </div>
-     
-                
-
             </div>
         </div>
     </div>
 
 
+<p>HTML</p>
+
+<pre>
+<div>
+<code>&lt;div class="accordion"></code>
+    <code>&lt;label class="accordion__head" for="css_only_accordion__basic"></code> CSS ONLY <code>&lt;/label></code>
+    <code>&lt;input id="css_only_accordion__basic" type="checkbox" class="accordion__status"></code>
+    <code> &lt;div class="accordion__content"></code>
+        <code> &lt;div class="accrodion__wrap"></code>
+            <code>&lt;div class="accordion__padding"></code>
+                <code> &lt;p></code> Natus delectus qui
+                    voluptatibus quod voluptatem?
+                    Optio, dolor. Quasi sit incidunt 
+                    atque similique ea architecto quis
+                    quisquam animi, aliquam qui eligendi 
+                    corporis! <code>&lt;/p></code>
+            <code>&lt;/div></code>
+        <code>&lt;/div></code>
+    <code>&lt;/div></code>
+<code>&lt;/div></code>
+</div>
+</pre>
+
+<p>CSS</p>
+<pre>
+<div>
+    <code>.accordion__status</code> <code>{</code>
+        display: none;
+    <code>}</code>
+    
+    <code>.accordion__content</code> <code>{</code>
+        display: grid;
+        grid-template-rows: 0fr;
+        overflow: hidden;
+        transition: all ease 500ms;
+    <code>}</code>
+    
+    <code>.accordion__status:checked</code> ~ <code>.accordion__content</code> <code>{</code>
+        grid-template-rows:1fr;
+        transition: all ease 250ms;
+    <code>}</code>
+    
+    <code>.accrodion__wrap</code> <code>{</code>
+        min-height: 0;
+    <code>}</code>
+</div>
+</pre>
 
 
 </section>
+
+
 
 <section >
 
@@ -133,7 +177,7 @@
         </div>
     </div>
     <div class="accordion">
-        <input id="css_only_accordion__radio_plus_2" type="radio" class="accordion__status" name="accordion">
+        <input id="css_only_accordion__radio_plus_2" type="radio" class="accordion__status" name="accordion" checked>
         <label class="accordion__head accordion__head--plus" for="css_only_accordion__radio_plus_2">CSS ONLY</label>
         <div class="accordion__content">
             <div class="accrodion__wrap">

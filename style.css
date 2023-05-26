@@ -6,20 +6,32 @@ body {
 
 .wrapper {
     width: 94vw;
-    max-width: 1000px;
+    max-width: 500px;
     margin: 0 auto;
 
 }
 
 
 section {
-    min-width: 50vh;
-    padding:10rem 0;
+    padding:3rem 0;
+}
+
+pre {
+    background-color: #333;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 2rem;
+    display: block;
+    padding: 1rem;
+    box-sizing: border-box;
+    height: max-content;
+    overflow: auto;
 }
 
 
-
-
+code {
+    color: #97EDDC;
+}
 
 
 /* ACCORDION CORE */
