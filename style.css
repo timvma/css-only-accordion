@@ -1,0 +1,67 @@
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    width: 94vw;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+
+section {
+    min-width: 50vh;
+    padding:10rem 0;
+}
+
+
+
+.accordion__status {
+    display: none;
+}
+
+
+
+/* CSS ONLY | ACCORDION BASIC */
+
+.accordion {
+    display: block;
+    margin: 4rem auto;
+    width: 500px;
+   
+}
+
+.accordion__head {
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    background-color: #000;
+    box-sizing: border-box;
+}
+
+.accordion__content {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: all ease 500ms;
+    background-color: #456;
+    
+}
+
+
+.accordion__status:checked + .accordion__content {
+    grid-template-rows:1fr;
+    transition: all ease 250ms;
+}
+
+.accrodion__wrap {
+    min-height: 0;
+}
+
+.accordion__padding {
+    padding: 1rem;
+}
+
+
